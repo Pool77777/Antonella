@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Baby Shower · Brisley Antonella</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Tangerine:wght@400;700&display=swap">
+<style>
+:root{--bg:#FFF9F6;--pk:#DE5A8E;--pkl:#F7A3C2;--tx:#CF4A82;--ink:#5A3F45;--gold:#C9A15A;--card:rgba(255,255,255,.58);--line:rgba(201,161,90,.55);--sh:rgba(207,74,130,.24);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:transparent;color:var(--ink);font:21px/1.5 "Cormorant Garamond",Georgia,serif;text-align:center;overflow-x:hidden}
+body.lock{overflow:hidden}
+body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.5;mix-blend-mode:multiply;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/><feColorMatrix values='0 0 0 0 .7 0 0 0 0 .5 0 0 0 0 .55 0 0 0 .14 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+#bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:linear-gradient(180deg,#FFFBF8,#FFF1EE 55%,#FFE8EE)}
+.bl{position:absolute;border-radius:50%;filter:blur(36px);animation:drift 24s ease-in-out infinite alternate}
+.bl.a{width:420px;height:420px;left:-140px;top:-60px;background:radial-gradient(circle,#F8B6CD,transparent 68%)}
+.bl.b{width:460px;height:460px;right:-180px;top:34%;background:radial-gradient(circle,#FAC9D8,transparent 68%);animation-duration:30s}
+.bl.c{width:420px;height:420px;left:-120px;bottom:-90px;background:radial-gradient(circle,#FDDCCB,transparent 68%);animation-duration:27s}
+@keyframes drift{to{transform:translate3d(50px,-40px,0) scale(1.12)}}
+.fi{position:absolute;left:var(--l);bottom:-150px;width:var(--s);height:auto;filter:blur(var(--b,0px));opacity:.85;animation:rise var(--d) linear var(--dl) infinite}
+@keyframes rise{from{transform:translate3d(0,0,0) rotate(-12deg)}50%{transform:translate3d(28px,-62vh,0) rotate(10deg)}to{transform:translate3d(-16px,-128vh,0) rotate(-8deg)}}
+.sc{font-family:Tangerine,"Snell Roundhand",cursive;font-weight:700;color:var(--tx);line-height:.95;margin:0;text-shadow:0 1px 0 #fff,0 7px 16px rgba(207,74,130,.22)}
+main{max-width:460px;margin:0 auto;position:relative}
+section{position:relative;padding:62px 26px}
+p{margin:0 0 12px}
+.hd{font-style:italic;font-size:22px;color:var(--gold);margin:0 0 6px}
+.bow{display:block;width:var(--w,110px);height:auto}
+.par{position:absolute;will-change:transform}
+.cover{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:90px 26px 150px}
+.cover .par{z-index:-1}
+.p1{right:-26px;top:-4px}.p2{left:-30px;bottom:14px}.p3{right:8px;bottom:8px}
+.b1{--w:170px;rotate:14deg;animation:sway 6s ease-in-out infinite alternate}
+.b2{--w:170px;rotate:-8deg;scale:-1 1;animation:sway 7s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-4deg) translateY(0)}to{transform:rotate(4deg) translateY(-8px)}}
+.bear{display:block;width:132px;height:auto;filter:drop-shadow(0 10px 10px rgba(150,70,40,.28));animation:bob 4.5s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-9px) rotate(2deg)}}
+.cv1{font-size:56px;color:var(--ink);font-weight:400}
+.cv2{font-size:120px;transform:rotate(-4deg);margin:4px 0 8px;color:#D5457F;text-shadow:0 1px 0 #f9c0d6,0 2px 0 #f6aecb,0 3px 0 #f19cc0,0 4px 0 #ea8ab4,0 14px 22px rgba(207,74,130,.38)}
+.cv3{font-size:58px}
+.glass{background:var(--card);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.85);outline:1px solid var(--line);outline-offset:-7px;box-shadow:0 2px 4px rgba(207,74,130,.12),0 22px 44px var(--sh),inset 0 1px 0 #fff}
+.arch{border-radius:50% 50% 32px 32px/24% 24% 32px 32px;padding:58px 18px 34px}
+.card{border-radius:32px;padding:26px 20px}
+.tilt{transform-style:preserve-3d;will-change:transform}
+.big{font-size:112px;line-height:1;font-weight:500;margin:2px 0;background:linear-gradient(100deg,#9A7230,#F3DC9B 30%,#C9A15A 50%,#F7E7B4 70%,#9A7230);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 5px 6px rgba(120,80,20,.25));animation:foil 6s linear infinite}
+@keyframes foil{to{background-position:-220% 0}}
+.cd{display:flex;justify-content:center;gap:9px;margin-top:22px}
+.cd div{min-width:64px;padding:10px 4px;border-radius:22px;background:rgba(255,255,255,.7);border:1px solid var(--line);box-shadow:0 8px 16px rgba(207,74,130,.15)}
+.cd b{display:block;font-size:30px;font-weight:500;color:var(--tx);line-height:1.1}
+.cd span{font-size:15px}
+.btn{display:inline-block;font:500 20px "Cormorant Garamond",Georgia,serif;color:#fff;background:linear-gradient(135deg,var(--pkl),var(--pk));border:0;padding:13px 28px;border-radius:999px;text-decoration:none;cursor:pointer;margin:6px 4px;box-shadow:0 10px 20px var(--sh),inset 0 1px 0 rgba(255,255,255,.5);text-shadow:0 1px 2px rgba(150,30,80,.3)}
+.btn.alt{background:rgba(255,255,255,.6);color:var(--tx);border:1.5px solid var(--pk);box-shadow:none;text-shadow:none}
+.btn:focus-visible,input:focus-visible,.mus:focus-visible,.kn:focus-visible{outline:3px solid var(--pk);outline-offset:3px}
+form{text-align:left;margin-top:20px}
+label{display:block;margin:14px 0 4px;font-size:19px}
+input{width:100%;font:inherit;font-size:20px;color:var(--ink);background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:16px;padding:11px 14px}
+.row{text-align:center;margin-top:20px}
+.note{background:rgba(255,255,255,.6);border:1px dashed var(--line);border-radius:18px;padding:12px 14px;font-style:italic;font-size:19px;text-align:center;margin:16px 0 0}
+.gift{margin:14px 0 0;background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:20px;padding:0 14px 14px}
+.gift summary{cursor:pointer;padding:12px 0;font-style:italic;font-size:19px;color:var(--tx)}
+.acc{background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 0;text-align:center}
+.acc p{margin:0}
+.aq{font-style:italic;color:var(--gold);font-size:18px}
+.al{font-size:18px}
+.an{font-size:24px;font-weight:500;letter-spacing:.04em;word-break:break-all;margin:2px 0!important}
+.mini{font:500 16px "Cormorant Garamond",Georgia,serif;color:var(--tx);background:transparent;border:1.5px solid var(--pk);border-radius:999px;padding:6px 14px;margin:8px 4px 0;cursor:pointer}
+.hintc{font-size:16px;margin:8px 0 0;text-align:center}
+.err{color:var(--tx);min-height:1.4em;text-align:center;margin:10px 0 0;font-size:18px}
+.mus{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:45;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--pk);background:rgba(255,255,255,.8);color:var(--tx);font-size:22px;cursor:pointer;box-shadow:0 6px 16px var(--sh);display:none}
+.mus.off{opacity:.55;text-decoration:line-through}
+#env{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(90% 60% at 15% 8%,#F8B6CD,transparent 70%),radial-gradient(90% 60% at 90% 95%,#FDDCCB,transparent 70%),#FFF9F6;transition:opacity .9s ease;perspective:1000px}
+#env.gone{opacity:0;pointer-events:none}
+.to{font-size:66px;margin:0 0 40px}
+.env{position:relative;width:min(86vw,350px);aspect-ratio:3/2;filter:drop-shadow(0 24px 24px rgba(207,74,130,.35));transform:rotateX(14deg);animation:flo 4s ease-in-out infinite alternate}
+@keyframes flo{to{transform:rotateX(8deg) translateY(-8px)}}
+.env>*{position:absolute}
+.bk{inset:0;border-radius:10px;background:linear-gradient(160deg,#F9B9CF,#EE82AB)}
+.lt{left:7%;right:7%;top:6%;bottom:6%;border-radius:8px;background:#FFFDF9;border:1.5px solid var(--gold);padding-top:8px;transition:transform 1.1s ease .55s;z-index:2}
+.lt p{margin:0;font:700 36px/1 Tangerine,cursive;color:#C24E7D}
+.lt p+p{font-size:44px}
+.fr{inset:0;border-radius:10px;background:linear-gradient(160deg,#FBC6D8,#F28FB3);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);z-index:3}
+.fl{left:0;right:0;top:0;height:64%;background:linear-gradient(180deg,#F6A3C2,#FBC6D8);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s ease,z-index 0s .4s;z-index:4}
+.kn{left:50%;top:63%;width:150px;transform:translate(-50%,-50%);background:none;border:0;padding:0;cursor:pointer;z-index:5;transition:opacity .5s,transform .5s}
+.kn .bow{--w:150px}
+.gem{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F6E2A8,#C9A15A);box-shadow:0 3px 8px rgba(0,0,0,.28);color:#fff;font:700 30px/44px Tangerine,cursive}
+#env.open .env{animation:none;transform:rotateX(0)}
+#env.open .fl{transform:rotateX(180deg);z-index:1}
+#env.open .lt{transform:translateY(-62%)}
+#env.open .kn{opacity:0;transform:translate(-50%,-50%) scale(.7);pointer-events:none}
+.hint{margin:40px 0 0;font-style:italic;font-size:22px}
+[hidden]{display:none!important}
+.rv{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:96px}
+.back{align-self:flex-start;font:500 19px "Cormorant Garamond",Georgia,serif;color:var(--tx);background:rgba(255,255,255,.75);border:1.5px solid var(--pk);border-radius:999px;padding:8px 18px;margin:0 0 18px;cursor:pointer;box-shadow:0 6px 14px var(--sh)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01s!important;transition-delay:0s!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="lock">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBB8D0"/><stop offset=".6" stop-color="#E8689A"/><stop offset="1" stop-color="#C9457F"/></linearGradient>
+<radialGradient id="bh" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EBBB80"/><stop offset="1" stop-color="#C58444"/></radialGradient>
+<symbol id="bow" viewBox="0 0 200 140"><path fill="url(#g)" d="M98 66C72 14 22 8 10 40 2 64 40 84 98 72zM102 66C128 14 178 8 190 40c8 24-30 44-88 32zM96 74C84 100 70 122 52 136c22 2 38-16 48-46zM104 74c12 26 26 48 44 62-22 2-38-16-48-46z"/><path fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round" d="M26 36c24-10 50 0 66 26M174 36c-24-10-50 0-66 26"/><path fill="none" stroke="#B83A72" stroke-opacity=".28" stroke-width="3" stroke-linecap="round" d="M98 70C70 32 30 28 18 48M102 70C130 32 170 28 182 48"/><ellipse cx="100" cy="70" rx="14" ry="13" fill="#D9588C"/><ellipse cx="96" cy="66" rx="5" ry="4" fill="#fff" opacity=".4"/></symbol>
+<symbol id="bear" viewBox="0 0 160 172"><ellipse cx="80" cy="166" rx="48" ry="6" fill="#C9457F" opacity=".18"/><ellipse cx="80" cy="130" rx="40" ry="36" fill="url(#bh)"/><circle cx="48" cy="36" r="15" fill="#B67A3C"/><circle cx="48" cy="37" r="8" fill="#EFC08E"/><circle cx="112" cy="36" r="15" fill="#B67A3C"/><circle cx="112" cy="37" r="8" fill="#EFC08E"/><circle cx="80" cy="68" r="38" fill="url(#bh)"/><ellipse cx="80" cy="80" rx="18" ry="14" fill="#F3D5A8"/><ellipse cx="80" cy="72" rx="6.5" ry="4.6" fill="#5A3F45"/><circle cx="65" cy="58" r="3.8" fill="#3B2A2E"/><circle cx="95" cy="58" r="3.8" fill="#3B2A2E"/><path d="M80 76v6M72 84q8 6 16 0" fill="none" stroke="#5A3F45" stroke-width="2.4" stroke-linecap="round"/><ellipse cx="54" cy="160" rx="17" ry="11" fill="#C98F4E"/><ellipse cx="106" cy="160" rx="17" ry="11" fill="#C98F4E"/><circle cx="54" cy="160" r="5.5" fill="#EFC08E"/><circle cx="106" cy="160" r="5.5" fill="#EFC08E"/><rect x="54" y="112" width="52" height="38" rx="6" fill="#F8C4D4"/><rect x="76" y="112" width="8" height="38" fill="#EE82AB"/><rect x="54" y="127" width="52" height="8" fill="#EE82AB" opacity=".7"/><circle cx="46" cy="132" r="13" fill="url(#bh)"/><circle cx="114" cy="132" r="13" fill="url(#bh)"/><use href="#bow" x="58" y="94" width="44" height="31"/></symbol>
+<symbol id="ht" viewBox="0 0 100 90"><path fill="#F29BBB" d="M50 88C20 62 6 44 6 28 6 14 17 6 29 6c9 0 16 5 21 12 5-7 12-12 21-12 12 0 23 8 23 22 0 16-14 34-44 60z"/></symbol>
+</defs></svg>
+
+<div id="bg" aria-hidden="true">
+  <i class="bl a"></i><i class="bl b"></i><i class="bl c"></i>
+  <svg class="fi" style="--l:6%;--s:64px;--d:34s;--dl:-6s;--b:2px" viewBox="0 0 200 140"><use href="#bow"/></svg>
+  <svg class="fi" style="--l:78%;--s:92px;--d:26s;--dl:-14s" viewBox="0 0 200 140"><use href="#bow"/></svg>
+  <svg class="fi" style="--l:38%;--s:50px;--d:38s;--dl:-22s;--b:2.5px" viewBox="0 0 160 172"><use href="#bear"/></svg>
+  <svg class="fi" style="--l:62%;--s:78px;--d:30s;--dl:-3s" viewBox="0 0 160 172"><use href="#bear"/></svg>
+  <svg class="fi" style="--l:20%;--s:34px;--d:28s;--dl:-18s;--b:1.5px" viewBox="0 0 100 90"><use href="#ht"/></svg>
+  <svg class="fi" style="--l:88%;--s:30px;--d:36s;--dl:-27s;--b:2px" viewBox="0 0 100 90"><use href="#ht"/></svg>
+  <svg class="fi" style="--l:48%;--s:44px;--d:32s;--dl:-10s;--b:2px" viewBox="0 0 200 140"><use href="#bow"/></svg>
+</div>
+
+<div id="env">
+  <p class="sc to">Brisley Antonella</p>
+  <div class="env">
+    <div class="bk"></div>
+    <div class="lt"><p>ven a mi</p><p>Baby Shower</p></div>
+    <div class="fr"></div>
+    <div class="fl"></div>
+    <button class="kn" id="seal" aria-label="Abrir la invitación"><svg class="bow" viewBox="0 0 200 140"><use href="#bow"/></svg><i class="gem">B</i></button>
+  </div>
+  <p class="hint">Toca el botón dorado para abrir</p>
+</div>
+
+<button class="mus" id="mus" aria-label="Silenciar o activar la música" aria-pressed="true">♪</button>
+
+<main id="inv">
+  <section class="cover">
+    <div class="par p1" data-s=".22"><svg class="bow b1" viewBox="0 0 200 140" aria-hidden="true"><use href="#bow"/></svg></div>
+    <div class="par p2" data-s=".12"><svg class="bow b2" viewBox="0 0 200 140" aria-hidden="true"><use href="#bow"/></svg></div>
+    <p class="sc cv1">ven a mi…</p>
+    <h1 class="sc cv2">Baby Shower</h1>
+    <p class="sc cv3">Brisley Antonella</p>
+    <div class="par p3" data-s=".16"><svg class="bear" viewBox="0 0 160 172" aria-hidden="true"><use href="#bear"/></svg></div>
+  </section>
+
+  <section>
+    <p class="sc" style="font-size:66px">Hola, familia y amigos</p>
+    <p style="font-size:23px;margin-top:14px">Pronto estaré con ustedes, pero por ahora sigo creciendo rodeada de mucho amor. Mis papitos esperan este momento con el corazón lleno de ilusión y quieren compartirlo contigo.</p>
+  </section>
+
+  <section>
+    <p class="hd">Mis papitos</p>
+    <p class="sc" style="font-size:94px">Luis y Britany</p>
+    <p>te esperan</p>
+    <svg class="bow" style="--w:76px;margin:0 auto" viewBox="0 0 200 140" aria-hidden="true"><use href="#bow"/></svg>
+  </section>
+
+  <section>
+    <div class="arch glass tilt">
+      <p class="hd">Acompáñanos a celebrar</p>
+      <p style="font-size:26px;margin:0">Sábado</p>
+      <p class="big">5</p>
+      <p style="font-size:28px;margin:0">de diciembre</p>
+      <p style="font-size:26px;margin:4px 0 0">12:00 pm</p>
+      <div class="cd" id="cd"><div><b id="d">0</b><span>días</span></div><div><b id="h">0</b><span>horas</span></div><div><b id="m">0</b><span>min</span></div><div><b id="s">0</b><span>seg</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card glass tilt">
+      <p class="hd">Lugar</p>
+      <p style="font-size:24px">Alfredo Albornoz y Urbina Jado, lote 2</p>
+      <p style="font-size:21px;font-style:italic;margin:-4px 0 14px">(casa de mis abuelitos)</p>
+      <a class="btn" href="https://maps.app.goo.gl/5aeU8d7NFCc2oL3t7?g_st=ic" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+  </section>
+
+  <section>
+    <p id="conf" class="sc" style="font-size:64px">Confirma tu asistencia</p>
+    <p style="margin-top:10px">Cuéntanos si nos acompañas.</p>
+    <div class="row"><button type="button" class="btn" data-go="confirmo">Confirmo mi asistencia</button><button type="button" class="btn alt" data-go="no-asistire">No podré asistir</button></div>
+  </section>
+
+  <section>
+    <p class="sc" style="font-size:64px">Obsequio</p>
+    <p style="margin-top:10px">Tu presencia es nuestro mejor regalo. Si te nace tener un detalle con Brisley Antonella, lo recibiremos con mucho cariño.</p>
+  </section>
+
+  <section>
+    <svg class="bear" style="margin:0 auto 6px" viewBox="0 0 160 172" aria-hidden="true"><use href="#bear"/></svg>
+    <p class="sc" style="font-size:96px">Gracias</p>
+    <p>por ser parte de este día tan especial.</p>
+  </section>
+</main>
+
+<main id="rsvp" hidden>
+  <section class="rv">
+    <button type="button" class="back" data-go="">‹ Volver a la invitación</button>
+    <h2 id="ft" class="sc" style="font-size:64px"></h2>
+    <form id="f" class="card glass" novalidate>
+      <label for="n">Nombre</label><input id="n" autocomplete="name">
+      <label for="fa">Nombre de tu familia</label><input id="fa" value="Familia " autocapitalize="words">
+      <label for="p">Número de personas</label><input id="p" type="number" min="1" max="20" inputmode="numeric" value="1">
+      <label for="t">Tu teléfono</label><input id="t" type="tel" inputmode="tel" autocomplete="tel">
+      <p class="note" id="note"></p>
+      <details class="gift" id="gift"><summary id="gsum"></summary><div id="accs"></div><div class="row" style="margin-top:6px"><a class="btn alt" id="cmp" href="#" target="_blank" rel="noopener">Enviar comprobante por WhatsApp</a></div><p class="hintc">Se abrirá WhatsApp: adjunta ahí la captura de tu comprobante.</p></details>
+      <p class="err" id="err" role="alert"></p>
+      <div class="row"><button type="button" class="btn" id="go">Enviar</button><button type="button" class="btn alt" data-go="">Volver</button></div>
+    </form>
+    <div id="thanks" class="card glass" role="status" style="display:none"><p id="tmsg"></p><a class="btn" id="wa" href="#" target="_blank" rel="noopener">Enviar mi respuesta por WhatsApp</a><p style="font-size:17px;margin:8px 0 0">Toca el botón y luego “enviar” en WhatsApp para que tu respuesta llegue.</p><a class="btn alt" id="cmp2" href="#" target="_blank" rel="noopener" style="display:none">Enviar comprobante de mi transferencia</a><button type="button" class="btn alt" data-go="">Volver a la invitación</button></div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var NUM="593986573356",SHOW="098 657 3356";
+  var CUENTAS=[
+    {q:"Cuenta de mamá",b:"Banco Pichincha",t:"Cuenta transaccional",n:"2216734398",h:"Britany Bermeo"},
+    {q:"Cuenta de papá",b:"Banco Pichincha",t:"Cuenta de ahorro transaccional",n:"2210243559",h:"Luis Eras"}
+  ];
+  var NOTE_SI="Tu compañía es lo más importante. Si te nace tener un detalle con Brisley Antonella, puedes entregarlo en sobre cerrado ese día o hacerlo por transferencia, como prefieras. ¡Gracias por acompañarnos!";
+  var NOTE_NO="Te vamos a extrañar. Si te nace tener un detalle con Brisley Antonella, lo recibiremos con mucho cariño en una de estas cuentas. Si lo haces, ¿nos compartes el comprobante al "+SHOW+"?";
+  var env=document.getElementById("env"),mus=document.getElementById("mus");
+
+  /* Música suave generada (provisional) */
+  var ctx=null,timer=null,idx=0,on=false,want=false;
+  var notes=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,783.99,659.25,587.33];
+  function tone(f){
+    var t=ctx.currentTime,o=ctx.createOscillator(),o2=ctx.createOscillator(),g=ctx.createGain();
+    o.type="sine";o2.type="triangle";o.frequency.value=f;o2.frequency.value=f*2;
+    g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.07,t+.03);g.gain.exponentialRampToValueAtTime(.0001,t+1.8);
+    o.connect(g);o2.connect(g);g.connect(ctx.destination);o.start(t);o2.start(t);o.stop(t+1.9);o2.stop(t+1.9);
+  }
+  function play(){
+    try{
+      var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;want=true;
+      if(!ctx||ctx.state==="closed"){ctx=new AC();}
+      var r=ctx.resume&&ctx.resume();if(r&&r.catch)r.catch(function(){});
+      if(!timer)timer=setInterval(function(){if(ctx.state==="running")tone(notes[idx++%notes.length]);},650);
+      on=true;mus.classList.remove("off");mus.setAttribute("aria-pressed","true");
+    }catch(e){}
+  }
+  function pause(){clearInterval(timer);timer=null;}
+  function stop(){want=false;pause();on=false;mus.classList.add("off");mus.setAttribute("aria-pressed","false");}
+  mus.addEventListener("click",function(){want?stop():play();});
+  document.addEventListener("visibilitychange",function(){if(document.hidden){pause();}else if(want){play();}});
+  window.addEventListener("pageshow",function(){if(want)play();});
+  window.addEventListener("focus",function(){if(want)play();});
+  ["touchend","click","keydown","scroll"].forEach(function(ev){document.addEventListener(ev,function(){if(want&&(!ctx||ctx.state!=="running"||!timer))play();},{capture:true,passive:true});});
+  var bad=0;setInterval(function(){if(!want||document.hidden){bad=0;return;}if(ctx&&ctx.state==="running"&&timer){bad=0;return;}bad++;if(bad>=3){bad=0;try{if(ctx)ctx.close();}catch(e){}ctx=null;}play();},1000);
+
+  /* Sobre */
+  document.getElementById("seal").addEventListener("click",function(){
+    env.classList.add("open");play();mus.style.display="block";
+    setTimeout(function(){env.classList.add("gone");document.body.classList.remove("lock");},2300);
+    setTimeout(function(){env.style.display="none";},3300);
+  });
+
+  /* Profundidad al desplazarse: parallax y giro 3D suave */
+  var pars=[].slice.call(document.querySelectorAll(".par")),tilts=[].slice.call(document.querySelectorAll(".tilt")),raf=0;
+  function depth(){
+    raf=0;var y=window.pageYOffset||0,vh=window.innerHeight||700;
+    pars.forEach(function(e){e.style.transform="translate3d(0,"+(y*parseFloat(e.getAttribute("data-s"))).toFixed(1)+"px,0)";});
+    tilts.forEach(function(e){var r=e.getBoundingClientRect(),d=((r.top+r.height/2)-vh/2)/vh,a=Math.max(-9,Math.min(9,d*16));e.style.transform="perspective(900px) rotateX("+a.toFixed(2)+"deg)";});
+  }
+  window.addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(depth);},{passive:true});
+  window.addEventListener("resize",depth);depth();
+
+  /* Cuenta regresiva */
+  var target=new Date("2026-12-05T12:00:00-05:00").getTime();
+  function tick(){
+    var ms=target-Date.now();
+    if(ms<=0){document.getElementById("cd").innerHTML='<p class="sc" style="font-size:56px;margin:0">¡Es hoy!</p>';return;}
+    var s=Math.floor(ms/1000);
+    document.getElementById("d").textContent=Math.floor(s/86400);
+    document.getElementById("h").textContent=Math.floor(s%86400/3600);
+    document.getElementById("m").textContent=Math.floor(s%3600/60);
+    document.getElementById("s").textContent=s%60;
+  }
+  tick();setInterval(tick,1000);
+
+  /* Vistas: invitación y formulario (misma página, otra sección) */
+  function val(id){return document.getElementById(id).value.trim();}
+  function copyTxt(t,btn){
+    function ok(){var o=btn.getAttribute("data-t")||btn.textContent;btn.setAttribute("data-t",o);btn.textContent="¡Copiado!";setTimeout(function(){btn.textContent=o;},1600);}
+    function fb(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.cssText="position:fixed;opacity:0";document.body.appendChild(a);a.select();try{document.execCommand("copy");ok();}catch(e){}document.body.removeChild(a);}
+    try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb);return;}}catch(e){}
+    fb();
+  }
+  var accs=document.getElementById("accs");
+  CUENTAS.forEach(function(c){
+    var d=document.createElement("div");d.className="acc";
+    [["aq",c.q],["al",c.b],["al",c.t],["an",c.n],["al",c.h]].filter(function(x){return x[1];}).forEach(function(x){var p=document.createElement("p");p.className=x[0];p.textContent=x[1];d.appendChild(p);});
+    [["Copiar número",c.n],["Copiar todo",(c.h?c.h+"\n":"")+c.b+", "+c.t+"\n"+c.n]].forEach(function(x){var b=document.createElement("button");b.type="button";b.className="mini";b.textContent=x[0];b.addEventListener("click",function(){copyTxt(x[1],b);});d.appendChild(b);});
+    accs.appendChild(d);
+  });
+  function cmpHref(){
+    var n=val("n"),fa=val("fa"),m=n?"Hola, soy "+n+(fa&&fa.toLowerCase()!=="familia"?" ("+fa+")":"")+". Te envío el comprobante de mi detalle para Brisley Antonella.":"Hola, te envío el comprobante de mi detalle para Brisley Antonella.";
+    return "https://wa.me/"+NUM+"?text="+encodeURIComponent(m);
+  }
+  ["cmp","cmp2"].forEach(function(id){var a=document.getElementById(id);a.addEventListener("click",function(){a.href=cmpHref();});});
+  var mode="1",inv=document.getElementById("inv"),rv=document.getElementById("rsvp");
+  function show(h){
+    var was=!rv.hidden;
+    if(h==="confirmo"||h==="no-asistire"){
+      mode=h==="confirmo"?"1":"0";
+      document.getElementById("ft").textContent=mode==="1"?"Confirmo mi asistencia":"No podré asistir";
+      document.getElementById("note").textContent=mode==="1"?NOTE_SI:NOTE_NO;
+      document.getElementById("gsum").textContent=mode==="1"?"Si prefieres transferir, ver las cuentas":"Ver las cuentas para transferir";
+      document.getElementById("gift").open=mode==="0";
+      document.getElementById("f").style.display="block";document.getElementById("thanks").style.display="none";document.getElementById("err").textContent="";
+      inv.hidden=true;rv.hidden=false;
+    }else{rv.hidden=true;inv.hidden=false;if(was){var c=document.getElementById("conf");if(c)c.scrollIntoView({block:"center"});}}
+    if(h==="confirmo"||h==="no-asistire")window.scrollTo(0,0);depth();
+  }
+  function route(){show(location.hash.replace("#",""));}
+  document.querySelectorAll("[data-go]").forEach(function(b){b.addEventListener("click",function(){var h=b.getAttribute("data-go");show(h);try{if(window.self===window.top)location.hash=h;}catch(e){}});});
+  window.addEventListener("hashchange",route);route();
+  document.getElementById("go").addEventListener("click",function(){
+    var yes=mode==="1",err=document.getElementById("err");
+    var n=val("n"),fa=val("fa"),p=val("p"),t=val("t");
+    if(!n||fa.replace(/^familia\s*/i,"").length<2||!t||!p){err.textContent="Completa tu nombre, el nombre de tu familia (ej.: Familia Eras), el número de personas y tu teléfono.";return;}
+    if(!/^familia/i.test(fa))fa="Familia "+fa;
+    err.textContent="";
+    var txt="Hola, soy "+n+" ("+fa+"). "+(yes?"Confirmo mi asistencia":"No podré asistir")+" al baby shower de Brisley Antonella. Personas: "+p+". Mi teléfono: "+t+".";
+    var msg=yes
+      ?"¡Gracias por confirmar, "+n+"! Nos hará muy felices contar contigo. Te esperamos este 5 de diciembre a las 12:00 pm. Recuerda que tu detalle puede ser en sobre cerrado ese día o por transferencia. Si cambias de opinión, por favor házmelo saber al "+SHOW+"."
+      :"Gracias por avisarnos, "+n+". Lamentamos que no puedas acompañarnos, pero te llevamos en el corazón. Si cambias de opinión, por favor házmelo saber al "+SHOW+".";
+    document.getElementById("tmsg").textContent=msg;
+    document.getElementById("wa").href="https://wa.me/"+NUM+"?text="+encodeURIComponent(txt);
+    document.getElementById("f").style.display="none";
+    document.getElementById("thanks").style.display="block";window.scrollTo(0,0);
+    document.getElementById("cmp2").style.display=(mode==="0"||document.getElementById("gift").open)?"inline-block":"none";
+    saveRsvp({nombre:n,familia:fa,personas:Number(p)||1,telefono:t,asiste:yes,fecha:new Date().toISOString()});
+  });
+
+  /* Lista automática (solo si está disponible para quien abre la página) */
+  async function saveRsvp(d){
+    try{
+      if(!window.claude||!claude.use)return;
+      var db=await claude.use("db");
+      if(!db)return;
+      await db.doc("rsvps/r"+Date.now()+Math.floor(Math.random()*1000)).set(d);
+    }catch(e){}
+  }
+})();
+</script>
+</body>
+</html>
